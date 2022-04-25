@@ -2,7 +2,6 @@ package ro.fasttrackit.service;
 
 import org.springframework.stereotype.Service;
 import ro.fasttrackit.model.Country;
-import ro.fasttrackit.model.CountryDetails;
 import ro.fasttrackit.repository.CountryRepository;
 
 import java.util.List;

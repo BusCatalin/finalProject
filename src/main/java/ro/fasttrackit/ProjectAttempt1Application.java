@@ -5,7 +5,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import ro.fasttrackit.model.Country;
-import ro.fasttrackit.model.CountryDetails;
 import ro.fasttrackit.repository.CountryRepository;
 
 import java.util.List;
@@ -21,8 +20,10 @@ public class ProjectAttempt1Application {
     CommandLineRunner atStartUp(CountryRepository countryRepository) {
         return args -> {
             countryRepository.saveAll(List.of(
-                    new Country("Japan", "Asia",new CountryDetails("Tokyo",125472536,"Japanese yen")),
-                    new Country("Germany", "Europe",new CountryDetails("Berlin",83190556,"Euro"))
+                    new Country("Japan", "Asia","Tokyo",125472536,"Japanese yen"),
+                    new Country("Germany", "Europe","Berlin",83190556,"Euro"),
+                    new Country("Egypt","Africa","Cairo",102674145,"Egyptian pound"),
+                    new Country("Brazil","South America","Brasilia",212688125,"Real")
 
 			));
         };

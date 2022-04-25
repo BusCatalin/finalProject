@@ -7,25 +7,31 @@ public class Country {
     @Id
     @GeneratedValue
     private int id;
+
     private String name;
     private String continent;
-    @OneToOne(cascade = CascadeType.ALL)
-    private CountryDetails countryDetails;
+    private String capital;
+    private long population;
+    private String currency;
 
     public Country() {
     }
 
-    public Country(int id, String name, String continent,CountryDetails countryDetails) {
+    public Country(int id, String name, String continent,String capital,long population, String currency) {
         this.id = id;
         this.name = name;
         this.continent = continent;
-        this.countryDetails=countryDetails;
+        this.capital=capital;
+        this.population=population;
+        this.currency=currency;
     }
 
-    public Country(String name, String continent,CountryDetails countryDetails) {
+    public Country(String name, String continent,String capital,long population, String currency) {
         this.name = name;
         this.continent = continent;
-        this.countryDetails=countryDetails;
+        this.capital=capital;
+        this.population=population;
+        this.currency=currency;
     }
 
     public int getId() {
@@ -40,9 +46,18 @@ public class Country {
         return continent;
     }
 
-    public CountryDetails getCountryDetails() {
-        return countryDetails;
+    public String getCapital() {
+        return capital;
     }
+
+    public double getPopulation() {
+        return population;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
 
     public void setId(int id) {
         this.id = id;
@@ -56,8 +71,16 @@ public class Country {
         this.continent = continent;
     }
 
-    public void setCountryDetails(CountryDetails countryDetails) {
-        this.countryDetails = countryDetails;
+    public void setCapital(String capital) {
+        this.capital = capital;
+    }
+
+    public void setPopulation(long population) {
+
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
     }
 
     @Override

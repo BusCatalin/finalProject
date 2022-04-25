@@ -6,4 +6,6 @@ import ro.fasttrackit.model.Country;
 
 @Repository
 public interface CountryRepository extends JpaRepository<Country, Integer> {
+
+
 }

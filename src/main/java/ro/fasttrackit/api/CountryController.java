@@ -3,7 +3,6 @@ package ro.fasttrackit.api;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import ro.fasttrackit.model.Country;
-import ro.fasttrackit.model.CountryDetails;
 import ro.fasttrackit.service.CountryService;
 
 import java.util.List;
