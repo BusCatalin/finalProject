@@ -2,10 +2,17 @@ $(document).ready(() => {
     $('#add-button-modal').click(() => {
         const name=$('#modal-name').val();
         const continent=$('#modal-continent').val();
+        const capital=$('#modal-capital').val();
+        const area=$('#modal-area').val();
+        const currency=$('#modal-currency').val();
 
         const newCountry={
         name : name,
-        continent : continent
+        continent : continent,
+        capital : capital,
+        area : area,
+        currency : currency
+
         };
 
         if (countryToEdit == null) {
@@ -52,9 +59,15 @@ $(document).ready(() => {
     const row = this.parentElement.parentElement;
     const name = row.children[0].innerText;
     const continent = row.children[1].innerText;
+    const capital =row.children[2].innertext;
+    const area =row.children[3].innertext;
+    const currency =row.children[4].innertext;
 
     $('#modal-name').val(name);
     $('#modal-continent').val(continent);
+    $('#modal-capital').val(capital);
+    $('#modal-area').val(area);
+    $('#modal-currency').val(currency);
     });
 
     $('#add-country-button').click(function () {
@@ -63,9 +76,11 @@ $(document).ready(() => {
     });
 
     function clearModal() {
-            $('#modal-description').val('');
-            $('#modal-amount').val('');
-            $('#modal-type').val('');
+            $('#modal-name ').val('');
+            $('#modal-continent').val('');
+            $('#modal-capital').val('');
+            $('#modal-area').val('');
+            $('#modal-currency').val('');
         }
 
 

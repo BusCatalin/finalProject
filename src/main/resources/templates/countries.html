@@ -10,6 +10,7 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
         <ul class="navbar-nav">
+            <a class="navbar-brand" href="#">Country Information</a>
             <li class="nav-item">
                 <a data-th-href="@{/countries}"  class="nav-link">Home</a>
             </li>
@@ -49,7 +50,7 @@
         <div class="card-header" data-th-text="${countryInfo.name}" style="font-size:20"></div>
         <div class="card-footer" data-th-text="${countryInfo.continent}"></div>
         <div class="card-body" data-th-text="${countryInfo.capital}"></div>
-        <div class="card-footer" data-th-text="${countryInfo.population}"></div>
+        <div class="card-footer" data-th-text="${countryInfo.area}"></div>
         <div class="card-footer" data-th-text="${countryInfo.currency}"></div>
     </div>
 
@@ -69,6 +70,9 @@
             <div class="modal-body">
                 <input class="form-control form-control-lg m-2" id="modal-name" placeholder="Name" type="text"/>
                 <input class="form-control form-control-lg m-2" id="modal-continent" placeholder="Continent" type="text" />
+                <input class="form-control form-control-lg m-2" id="modal-capital" placeholder="Capital" type="text" />
+                <input class="form-control form-control-lg m-2" id="modal-area" placeholder="Surface Area" type="text" />
+                <input class="form-control form-control-lg m-2" id="modal-currency" placeholder="Currency" type="text" />
             </div>
 
             <!-- Modal footer -->

@@ -20,10 +20,10 @@ public class ProjectAttempt1Application {
     CommandLineRunner atStartUp(CountryRepository countryRepository) {
         return args -> {
             countryRepository.saveAll(List.of(
-                    new Country("Japan", "Asia","Tokyo",125472536,"Japanese yen"),
-                    new Country("Germany", "Europe","Berlin",83190556,"Euro"),
-                    new Country("Egypt","Africa","Cairo",102674145,"Egyptian pound"),
-                    new Country("Brazil","South America","Brasilia",212688125,"Real")
+                    new Country("Japan", "Asia","Tokyo",377975,"Japanese yen"),
+                    new Country("Germany", "Europe","Berlin",357022,"Euro"),
+                    new Country("Egypt","Africa","Cairo",1010408,"Egyptian pound"),
+                    new Country("Brazil","South America","Brasilia",8515767,"Real")
 
 			));
         };

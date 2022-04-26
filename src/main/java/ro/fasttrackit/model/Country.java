@@ -11,26 +11,26 @@ public class Country {
     private String name;
     private String continent;
     private String capital;
-    private long population;
+    private long area;
     private String currency;
 
     public Country() {
     }
 
-    public Country(int id, String name, String continent,String capital,long population, String currency) {
+    public Country(int id, String name, String continent,String capital,long area, String currency) {
         this.id = id;
         this.name = name;
         this.continent = continent;
         this.capital=capital;
-        this.population=population;
+        this.area=area;
         this.currency=currency;
     }
 
-    public Country(String name, String continent,String capital,long population, String currency) {
+    public Country(String name, String continent,String capital,long area, String currency) {
         this.name = name;
         this.continent = continent;
         this.capital=capital;
-        this.population=population;
+        this.area=area;
         this.currency=currency;
     }
 
@@ -50,8 +50,8 @@ public class Country {
         return capital;
     }
 
-    public double getPopulation() {
-        return population;
+    public long getArea() {
+        return area;
     }
 
     public String getCurrency() {
@@ -75,7 +75,7 @@ public class Country {
         this.capital = capital;
     }
 
-    public void setPopulation(long population) {
+    public void setArea(long area) {
 
     }
 
